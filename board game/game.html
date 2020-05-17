@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Game of Thrones board game</title>
+		<meta name="description" content="Game of Thrones online board game">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/game.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html"><img src="icons/logo.png" alt="logo" width="90px"></a>
+			</div>
+		</header>
+	  <main>
+			<section class="top">
+				<div class="dicebox">
+					<img class="dice" id="dice" src="icons/6.png" alt="dice" width="50px">
+					<a class="button" id="button">Roll</a>
+				</div>
+				<p class="status" id="status">Player 1, you're first. Click the button to roll the dice.</p>
+				<div class="playerbox">
+					<div class="player1">
+					</div>
+					<div class="player2 opacity">
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="board">
+				</div>
+			</section>
+	  </main>
+		<script src="scripts/game.js"></script>
+	</body>
+</html>

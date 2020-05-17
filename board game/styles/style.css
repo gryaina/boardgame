@@ -1,0 +1,179 @@
+body {
+  background-image: url("../images/ornament.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.logo {
+  padding: 20px 0 0 20px;
+}
+
+.typewriter {
+  font-size: 2em;
+  width: 30%;
+  text-align: center;
+  color: snow;
+  font-family: 'Gochi Hand';
+  overflow: hidden;
+  border-right: .10em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+  typing 2.5s steps(30, end),
+  blink-caret .8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0 }
+  to {
+    width: 30% }
+}
+
+@keyframes blink-caret {
+  from , to {
+    border-color: transparent }
+  50% {
+    border-color: orange }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 100px;
+  max-width: 1400px;
+}
+
+.characters div:nth-child(1) {
+  order: 5;
+}
+
+.characters div:nth-child(2) {
+  order: 2;
+}
+
+.characters div:nth-child(3) {
+  order: 6;
+}
+
+.characters div:nth-child(4) {
+  order: 3;
+}
+
+.characters div:nth-child(5) {
+  order: 7;
+}
+
+.characters div:nth-child(6) {
+  order: 10;
+}
+
+.characters div:nth-child(7) {
+  order: 1;
+}
+
+.characters div:nth-child(8) {
+  order: 8;
+}
+
+.characters div:nth-child(9) {
+  order: 9;
+}
+
+.characters div:nth-child(10) {
+  order: 4;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  width: 170px;
+  margin: 30px 30px 0 30px;
+  transition: 0.3s;
+}
+
+.card img {
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Barlow", serif;
+  font-weight: normal;
+  font-size: 1em;
+  color: snow;
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+.card p {
+  font-weight: bold;
+}
+
+.card:hover {
+  background-color: rgba(9, 9, 9, 0.8);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(75, 17, 17, 0.8);
+}
+
+.selected:hover {
+  background-color: rgba(75, 17, 17, 0.8);
+  cursor: pointer;
+}
+
+.button {
+  text-decoration: none;
+  background-image: linear-gradient(white, gray);
+  border-radius: 5px;
+  color: black;
+  font-size: 1.3em;
+  font-family: 'montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 40px 0 0;
+  transition: 0.5s;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-image: linear-gradient(#f3eded, #6d6d6d);
+  transition: 0.5s;
+  border: none;
+  cursor: pointer
+}
+
+h2 {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #19232b;
+  text-align: center;
+  margin: 0;
+}
+
+.messagebox {
+  padding: 15px 35px;
+  background-color: rgba( 999, 999, 999, 0.7);
+  border-radius: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.error {
+  color: #e20101;
+}

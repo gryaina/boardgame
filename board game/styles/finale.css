@@ -1,0 +1,73 @@
+body {
+  background-image: url("../images/ornament.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  padding: 20px 0 0 20px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: snow;
+  font-size: 4em;
+  font-family: "Barlow";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: snow;
+  font-family: "Barlow";
+  font-weight: normal;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  top: 230px;
+  left: auto;
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  text-decoration: none;
+  background-image: linear-gradient(white, gray);
+  border-radius: 5px;
+  color: black;
+  font-size: 1.3em;
+  font-family: 'montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin: 40px 0 0;
+  transition: 0.5s;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-image: linear-gradient(#f3eded, #6d6d6d);
+  transition: 0.5s;
+  border: none;
+  cursor: pointer
+}
